@@ -1,9 +1,12 @@
 {
     "name": "clever-upload-backend",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "dependencies": {
-        "q": "~1.0.0",
-        "sequelize": "1.7.0-beta8"
+        "q": "1.0.0",
+        "sequelize": "1.7.0-rc9"
+    },
+    "scripts": {
+        "test": "grunt test:unit"
     },
     "author": {
         "name": "Clevertech",
@@ -28,7 +31,11 @@
         "url": "https://github.com/CleverStack/clever-upload-backend/issues"
     },
     "devDependencies": {
-        "chai": "*",
-        "mocha": "*"
-    }
+        "chai": "1.9.0",
+        "mocha": "1.17.1"
+    },
+    "bundledDependencies": [
+      "clever-orm",
+      "clever-auth"
+    ]
 }
